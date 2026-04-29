@@ -1,0 +1,17 @@
+{
+  "name": "spotify-recent-playlist",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "recent-playlist": "./src/cli.js"
+  },
+  "scripts": {
+    "recent": "node ./src/cli.js",
+    "test": "node --test",
+    "check:secrets": "node ./scripts/check-secrets.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
