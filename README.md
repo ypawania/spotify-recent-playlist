@@ -21,9 +21,19 @@ npm run recent -- --after "today 09:00" --mode replace --playlist-id SPOTIFY_PLA
 
 By default, playlists are private and duplicate tracks are removed.
 
+To remove a playlist created during manual testing:
+
+```sh
+npm run recent -- --delete-playlist SPOTIFY_PLAYLIST_ID
+```
+
+Spotify exposes this as unfollowing/deleting the playlist from your library.
+
 ## Testing
 
 ```sh
 npm test
 npm run check:secrets
 ```
+
+Before committing, run the secret check and review `git diff --cached`. Do not commit `.env` or token files.
